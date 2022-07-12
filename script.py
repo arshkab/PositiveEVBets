@@ -106,7 +106,7 @@ def draft_kings_baseball_odds(website_hr):
     
     
 
-#bases_dk,home_runs_dk,earned_runs_dk,hits_allowed_dk,pitching_outs_dk,strikeouts_dk = draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=total-bases'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=home-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=earned-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=hits-allowed'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=outs-recorded'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=strikeouts')
+bases_dk,home_runs_dk,earned_runs_dk,hits_allowed_dk,pitching_outs_dk,strikeouts_dk = draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=total-bases'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=home-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=earned-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=hits-allowed'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=outs-recorded'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=strikeouts')
 
 
 #draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=total-bases')
@@ -308,49 +308,43 @@ def pinnacle_player_prop():
 
 
 
+def testing():
+    #TEST 2
+    # website = 'https://sports.tipico.de/en/all/football/spain'
+    # browser.get(website)
+    # #box = browser.find_element(by=By.XPATH,value='//div[contains(@testid, "Program_SELECTION")]')
+    # sport_title = browser.find_elements(by=By.CLASS_NAME,value = 'styles-app-structure-program')
+    # print(sport_title[0].text)
+    # #print(sport_title[0].get_attribute('innerHTML'))
+    # parent = sport_title[0].find_element(by=By.XPATH,value='./..')
+    # #print(parent)
+    # #print(parent.get_attribute('innerHTML'))
+    # grandparent = sport_title[0].find_element(by=By.XPATH,value='./..')
+    # print(grandparent[0].text)
+    # soup = BeautifulSoup(browser.page_source, 'html.parser')
+    # #print(soup)
+    # links = soup.select("sportsbook-outcome-cell")
+    # print(links)
+    #elem.clear()
+    #elem.send_keys("pycon")
+    #elem.send_keys(Keys.RETURN)
+    'dsdsd'
+    # url = "https://www.tipico.de/de/live-wetten/"
+    # try:
+    #  page = urllib.request.urlopen(url)
+    # except:
+    #  print("An error occured.")
 
-#TEST 2
-# website = 'https://sports.tipico.de/en/all/football/spain'
-# browser.get(website)
-# #box = browser.find_element(by=By.XPATH,value='//div[contains(@testid, "Program_SELECTION")]')
-# sport_title = browser.find_elements(by=By.CLASS_NAME,value = 'styles-app-structure-program')
-# print(sport_title[0].text)
-# #print(sport_title[0].get_attribute('innerHTML'))
-# parent = sport_title[0].find_element(by=By.XPATH,value='./..')
-# #print(parent)
-# #print(parent.get_attribute('innerHTML'))
-# grandparent = sport_title[0].find_element(by=By.XPATH,value='./..')
-# print(grandparent[0].text)
-'''
-for i in sport_title:
-    indepth =i.find_elements(by=By.CLASS_NAME,value= 'Program-styles-program.Program-styles-desktop')
-    print(indepth)
-print("sports",sport_title)
-'''
-
-# soup = BeautifulSoup(browser.page_source, 'html.parser')
-# #print(soup)
-# links = soup.select("sportsbook-outcome-cell")
-# print(links)
-#elem.clear()
-#elem.send_keys("pycon")
-#elem.send_keys(Keys.RETURN)
-
-# url = "https://www.tipico.de/de/live-wetten/"
-# try:
-#  page = urllib.request.urlopen(url)
-# except:
-#  print("An error occured.")
-
-# soup = BeautifulSoup(page, "html.parser")
-#print(soup)
-#EventOddGroup-styles-odd-groups
-# regex = re.compile('EventOddButton-styles-selected ')
-# content_lis = soup.find_all('button id', attrs={'span class': regex})
-# print("Content_lis",content_lis)
-# regex = re.compile('c_but_base c_but')
-# content_lis = soup.find_all('button', attrs={'class': regex})
-# print(content_lis)
+    # soup = BeautifulSoup(page, "html.parser")
+    #print(soup)
+    #EventOddGroup-styles-odd-groups
+    # regex = re.compile('EventOddButton-styles-selected ')
+    # content_lis = soup.find_all('button id', attrs={'span class': regex})
+    # print("Content_lis",content_lis)
+    # regex = re.compile('c_but_base c_but')
+    # content_lis = soup.find_all('button', attrs={'class': regex})
+    # print(content_lis)
+    return 0
 
 def decimal_to_american(decimal_odds):
     decimal_odds = float(decimal_odds)
@@ -405,6 +399,27 @@ def comparsion_iteration(test_dk,test2):
     #print(similar_keys)
 
     #wouldn't work for if the underdog or favorite is swicthed
+    # Corey Kluber
+    # ['O', ' 4.5', '-160', 'U', ' 4.5', '+120'] ['Over 4.5 Hits', '1.813', 'Under 4.5 Hits', '1.925']
+    # pinnacle_american -108.1081081081081 -123.00123001230013
+    # Non-vig odds: 0.48501872659176026 0.5149812734082397
+    # pinnacle 1.813 1.925
+    # dk_odds -160 +120
+    # PEV_under 6.704119850187261
+    # dk_under 120.0
+    # PEV_fav -16.315543071161045
+    # dk_fav 160.0
+
+    # Jordan Lyles
+    # ['O', ' 16.5', '-140', 'U', ' 16.5', '+105'] ['Over 16.5 PitchingOuts', '1.584', 'Under 16.5 PitchingOuts', '2.280']
+    # pinnacle_american 127.99999999999999 -171.23287671232873
+    # Non-vig odds: 0.40993788819875776 0.5900621118012422
+    # pinnacle 1.584 2.280
+    # dk_odds -140 +105
+    # PEV_under -15.962732919254663
+    # dk_under 105.0
+    # PEV_fav 1.1535048802129566
+    # dk_fav 140.0
     for i in similar_keys:
         #print(test_dk[i],test2[i])
         # the higher the decimal value, the higher the odds - the more the underdog; +110,-120
@@ -508,6 +523,7 @@ def comparsion_iteration(test_dk,test2):
             print("dk_fav",dk_favorite)
         if(positive_ev_fav_bet>0):
             print("WE GOT ONE!!!!!!!!!!!!!!")
+            print(i)
             print(test_dk[i],test2[i])
             print("pinnacle_american",pinnacle_underdog,pinnacle_favorite)
             print("Non-vig odds:",no_vig_odds1,odds2)
@@ -520,9 +536,9 @@ def comparsion_iteration(test_dk,test2):
             print("dk_fav",dk_favorite)
 
 def compare_odds(pinnacle_website):
-    #print(pinnacle_baseball_player_props(pinnacle_website))
+    print(pinnacle_website)
     bases_pinnacle,home_runs_pinnacle,earned_runs_pinnacle,hits_allowed_pinnacle,pitching_outs_pinnacle,strikeouts_pinnacle = pinnacle_baseball_player_props(pinnacle_website)
-    bases_dk,home_runs_dk,earned_runs_dk,hits_allowed_dk,pitching_outs_dk,strikeouts_dk = draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=total-bases'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=home-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=earned-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=hits-allowed'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=outs-recorded'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=strikeouts')
+    #bases_dk,home_runs_dk,earned_runs_dk,hits_allowed_dk,pitching_outs_dk,strikeouts_dk = draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=total-bases'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=batter-props&subcategory=home-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=earned-runs'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=hits-allowed'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=outs-recorded'),draft_kings_baseball_odds('https://sportsbook.draftkings.com/leagues/baseball/88670847?category=pitcher-props&subcategory=strikeouts')
     print(bases_pinnacle)
     print(home_runs_pinnacle)
     print(earned_runs_pinnacle)
@@ -530,12 +546,7 @@ def compare_odds(pinnacle_website):
     print(pitching_outs_pinnacle)
     print(strikeouts_pinnacle)
     print("-----------")
-    print(bases_dk)
-    print(home_runs_dk)
-    print(earned_runs_dk)
-    print(hits_allowed_dk)
-    print(pitching_outs_dk)
-    print(strikeouts_dk)
+   
     comparsion_iteration(bases_dk,bases_pinnacle)
     comparsion_iteration(home_runs_dk,home_runs_pinnacle)
     comparsion_iteration(earned_runs_dk,earned_runs_pinnacle)
@@ -550,124 +561,21 @@ def compare_odds(pinnacle_website):
     test_dk = {'AJ Pollock': ['O', ' 1.5', '+115', 'U', ' 1.5', '-150'], 'Alex Kirilloff': ['O', ' 1.5', '+120', 'U', ' 1.5', '-160'], 'Andrew Vaughn': ['O', ' 1.5', '-105', 'U', ' 1.5', '-130'], 'Byron Buxton': ['O', ' 1.5', '-105', 'U', ' 1.5', '-125'], 'Carlos Correa': ['O', ' 1.5', '+105', 'U', ' 1.5', '-140'], 'Gavin Sheets': ['O', ' 1.5', '+125', 'U', ' 1.5', '-170'], 'Gio Urshela': ['O', ' 0.5', '-210', 'U', ' 0.5', '+155'], 'Jorge Polanco': ['O', ' 1.5', '+115', 'U', ' 1.5', '-155'], 'Jose Abreu': ['O', ' 1.5', '-110', 'U', ' 1.5', '-120'], 'Jose Miranda': ['O', ' 0.5', '-190', 'U', ' 0.5', '+140'], 'Leury Garcia': ['O', ' 0.5', '-200', 'U', ' 0.5', '+145'], 'Luis Arraez': ['O', ' 1.5', '+105', 'U', ' 1.5', '-135'], 'Luis Robert': ['O', ' 1.5', '-125', 'U', ' 1.5', '-105'], 'Max Kepler': ['O', ' 1.5', '+115', 'U', ' 1.5', '-150'], 'Ryan Jeffers': ['O', ' 0.5', '-135', 'U', ' 0.5', '+105'], 'Seby Zavala': ['O', ' 0.5', '-130', 'U', ' 0.5', '+100'], 'Tim Anderson': ['O', ' 1.5', '-115', 'U', ' 1.5', '-115'], 'Yoan Moncada': ['O', ' 0.5', '-185', 'U', ' 0.5', '+140'], 'Alejandro Kirk': ['O', ' 1.5', '+115', 'U', ' 1.5', '-155'], 'Bo Bichette': ['O', ' 1.5', '-110', 'U', ' 1.5', '-125'], 'Cavan Biggio': ['O', ' 0.5', '-125', 'U', ' 0.5', '-105'], 'Elvis Andrus': ['O', ' 0.5', '-150', 'U', ' 0.5', '+110'], 'George Springer': ['O', ' 1.5', '+125', 'U', ' 1.5', '-165'], 'Lourdes Gurriel Jr.': ['O', ' 1.5', '+130', 'U', ' 1.5', '-170'], 'Matt Chapman': ['O', ' 0.5', '-165', 'U', ' 0.5', '+125'], 'Nick Allen': ['O', ' 0.5', '-110', 'U', ' 0.5', '-120'], 'Ramon Laureano': ['O', ' 0.5', '-140', 'U', ' 0.5', '+105'], 'Santiago Espinal': ['O', ' 0.5', '-180', 'U', ' 0.5', '+135'], 'Sean Murphy': ['O', ' 0.5', '-165', 'U', ' 0.5', '+125'], 'Seth Brown': ['O', ' 1.5', '+135', 'U', ' 1.5', '-180'], 'Skye Bolt': ['O', ' 0.5', '-120', 'U', ' 0.5', '-110'], 'Stephen Vogt': ['O', ' 0.5', '-135', 'U', ' 0.5', '+105'], 'Teoscar Hernandez': ['O', ' 1.5', '-105', 'U', ' 1.5', '-130'], 'Tony Kemp': ['O', ' 0.5', '-205', 'U', ' 0.5', '+150'], 'Vimael Machin': ['O', ' 0.5', '-140', 'U', ' 0.5', '+105'], 'Vladimir Guerrero Jr.': ['O', ' 1.5', '+105', 'U', ' 1.5', '-140'], 'Brendan Rodgers': ['O', ' 0.5', '-200', 'U', ' 0.5', '+150'], 'C.J. Cron': ['O', ' 0.5', '-150', 'U', ' 0.5', '+110'], 'Chris Taylor': ['O', ' 1.5', '+135', 'U', ' 1.5', '-180'], 'Cody Bellinger': ['O', ' 0.5', '-155', 'U', ' 0.5', '+115'], 'Connor Joe': ['O', ' 0.5', '-160', 'U', ' 0.5', '+120'], 'Elias Diaz': ['O', ' 0.5', '-145', 'U', ' 0.5', '+110'], 'Freddie Freeman': ['O', ' 1.5', '+120', 'U', ' 1.5', '-160'], 'Garrett Hampson': ['O', ' 0.5', '-105', 'U', ' 0.5', '-130'], 'Hanser Alberto': ['O', ' 0.5', '-185', 'U', ' 0.5', '+135'], 'Jose Iglesias': ['O', ' 0.5', '-175', 'U', ' 0.5', '+130'], 'Justin Turner': ['O', ' 1.5', '+115', 'U', ' 1.5', '-150'], 'Kris Bryant': ['O', ' 0.5', '-185', 'U', ' 0.5', '+135'], 'Mookie Betts': ['O', ' 1.5', '-110', 'U', ' 1.5', '-120'], 'Randal Grichuk': ['O', ' 0.5', '-160', 'U', ' 0.5', '+120'], 'Trayce Thompson': ['O', ' 0.5', '-170', 'U', ' 0.5', '+125'], 'Trea Turner': ['O', ' 1.5', '-125', 'U', ' 1.5', '-105'], 'Will Smith': ['O', ' 1.5', '+110', 'U', ' 1.5', '-145'], 'Yonathan Daza': ['O', ' 1.5', '+160', 'U', ' 1.5', '-220']}
     #test2 = {'Abraham Toro': ['Over 0.5 TotalBases', '1.714', 'Under 0.5 TotalBases', '2.050'], 'Adam Frazier': ['Over 0.5 TotalBases', '1.555', 'Under 0.5 TotalBases', '2.320'], 'Alejandro Kirk': ['Over 0.5 TotalBases', '1.500', 'Under 0.5 TotalBases', '2.450'], 'Bo Bichette': ['Over 1.5 TotalBases', '2.160', 'Under 1.5 TotalBases', '1.641'], 'Cal Raleigh': ['Over 0.5 TotalBases', '1.591', 'Under 0.5 TotalBases', '2.250'], 'Carlos Santana': ['Over 0.5 TotalBases', '1.621', 'Under 0.5 TotalBases', '2.200'], 'Dylan Moore': ['Over 0.5 TotalBases', '2.050', 'Under 0.5 TotalBases', '1.714'], 'Eugenio Suarez': ['Over 0.5 TotalBases', '1.769', 'Under 0.5 TotalBases', '1.980'], 'George Springer': ['Over 0.5 TotalBases', '1.617', 'Under 0.5 TotalBases', '2.200'], 'J.P. Crawford': ['Over 0.5 TotalBases', '1.448', 'Under 0.5 TotalBases', '2.580'], 'Julio Rodriguez': ['Over 1.5 TotalBases', '2.710', 'Under 1.5 TotalBases', '1.418'], 'Lourdes Gurriel Jr.': ['Over 0.5 TotalBases', '1.492', 'Under 0.5 TotalBases', '2.470'], 'Matt Chapman': ['Over 0.5 TotalBases', '1.769', 'Under 0.5 TotalBases', '1.980'], 'Raimel Tapia': ['Over 0.5 TotalBases', '1.595', 'Under 0.5 TotalBases', '2.250'], 'Santiago Espinal': ['Over 0.5 TotalBases', '1.632', 'Under 0.5 TotalBases', '2.180'], 'Teoscar Hernandez': ['Over 1.5 TotalBases', '2.310', 'Under 1.5 TotalBases', '1.561'], 'Ty France': ['Over 0.5 TotalBases', '1.450', 'Under 0.5 TotalBases', '2.580'], 'Vladimir Guerrero Jr.': ['Over 1.5 TotalBases', '1.980', 'Under 1.5 TotalBases', '1.769']} {'Alejandro Kirk': ['Over 0.5 HomeRuns', '4.900', 'Under 0.5 HomeRuns', '1.122'], 'Bo Bichette': ['Over 0.5 HomeRuns', '5.000', 'Under 0.5 HomeRuns', '1.117'], 'Cal Raleigh': ['Over 0.5 HomeRuns', '4.000', 'Under 0.5 HomeRuns', '1.187'], 'Carlos Santana': ['Over 0.5 HomeRuns', '4.880', 'Under 0.5 HomeRuns', '1.123'], 'Eugenio Suarez': ['Over 0.5 HomeRuns', '5.280', 'Under 0.5 HomeRuns', '1.103'], 'George Springer': ['Over 0.5 HomeRuns', '4.160', 'Under 0.5 HomeRuns', '1.173'], 'Julio Rodriguez': ['Over 0.5 HomeRuns', '4.710', 'Under 0.5 HomeRuns', '1.132'], 'Matt Chapman': ['Over 0.5 HomeRuns', '4.450', 'Under 0.5 HomeRuns', '1.150'], 'Teoscar Hernandez': ['Over 0.5 HomeRuns', '3.930', 'Under 0.5 HomeRuns', '1.194'], 'Vladimir Guerrero Jr.': ['Over 0.5 HomeRuns', '3.520', 'Under 0.5 HomeRuns', '1.234']} {'Alek Manoah': ['Over 2.5 EarnedRuns', '2.090', 'Under 2.5 EarnedRuns', '1.689'], 'Robbie Ray': ['Over 2.5 EarnedRuns', '1.943', 'Under 2.5 EarnedRuns', '1.800']} {'Alek Manoah': ['Over 4.5 Hits', '1.588', 'Under 4.5 Hits', '2.260'], 'Robbie Ray': ['Over 4.5 Hits', '1.628', 'Under 4.5 Hits', '2.180']} {'Alek Manoah': ['Over 18.5 PitchingOuts', '2.250', 'Under 18.5 PitchingOuts', '1.591'], 'Robbie Ray': ['Over 17.5 PitchingOuts', '1.408', 'Under 17.5 PitchingOuts', '2.750']} {'Alek Manoah': ['Over 5.5 Strikeouts', '1.699', 'Under 5.5 Strikeouts', '2.080']}
     pinacle_dk_test = {'Brendan Rodgers': ['Over 0.5 TotalBases', '1.476', 'Under 0.5 TotalBases', '2.510']}
-    #print(bases_dk_test.keys())
-    # similar_keys = test_dk.keys() & test2.keys()
-    # print(similar_keys)
-
-    # #wouldn't work for if the underdog or favorite is swicthed
-    # for i in similar_keys:
-    #     #print(test_dk[i],test2[i])
-    #     # the higher the decimal value, the higher the odds - the more the underdog; +110,-120
-    #     if test2[i][1] > test2[i][3]:
-    #         pinnacle_underdog = test2[i][1]
-    #         pinnacle_favorite = test2[i][3]
-    #     else:
-    #         pinnacle_underdog = test2[i][3]
-    #         pinnacle_favorite = test2[i][1]
-
-    #     pinnacle_underdog = decimal_to_american(pinnacle_underdog)
-    #     pinnacle_favorite = decimal_to_american(pinnacle_favorite)
-    #     # print("pinnacle_american",pinnacle_underdog,pinnacle_favorite)
-        
-    #     no_vig_odds1,odds2 = non_vig_fair_odds(pinnacle_underdog,pinnacle_favorite)
-    #     # print("Non-vig odds:",no_vig_odds1,odds2)
-    #     # print("pinnacle",test2[i][1],test2[i][3])
-    #     # print("pinnacle",pinnacle_underdog,pinnacle_favorite)
-    #     # print("dk_odds",test_dk[i][2],test_dk[i][5])
-
-    #     dk_under = False
-    #     dk_fav = False
-    #     #-230.-500
-    #     if "-" in test_dk[i][2] and "-" in test_dk[i][5]:
-    #         # dk_1_neg = True
-    #         # dk_2_neg = True
-    #         dk_odd1 = test_dk[i][2].replace("-","")
-    #         dk_odd1 = float(dk_odd1)
-    #         dk_odd2 = test_dk[i][5].replace("-","")
-    #         dk_odd2 = float(dk_odd2)
-    #         if dk_odd1 > dk_odd2:
-    #             dk_favorite = dk_odd1
-    #             dk_underdog = dk_odd2
-    #         else:
-    #             dk_underdog = dk_odd1
-    #             dk_favorite = dk_odd2
-    #         dk_under = True
-    #         dk_fav = True
-
-    #     if "-" in test_dk[i][2] and "+" in test_dk[i][5]:
-    #         # dk_1_neg = True
-    #         dk_odd1 = test_dk[i][2].replace("-","")
-    #         dk_odd1 = float(dk_odd1)
-    #         dk_odd2 = test_dk[i][5].replace("+","")
-    #         dk_odd2 = float(dk_odd2)
-        
-    #         dk_favorite = dk_odd1
-    #         dk_underdog = dk_odd2
-    #         dk_fav = True
-           
-        
-    #     if "+" in test_dk[i][2] and "-" in test_dk[i][5]:
-    #         # dk_2_neg = True
-    #         dk_odd1 = test_dk[i][2].replace("+","")
-    #         dk_odd1 = float(dk_odd1)
-    #         dk_odd2 = test_dk[i][5].replace("-","")
-    #         dk_odd2 = float(dk_odd2)
-
-    #         dk_underdog = dk_odd1
-    #         dk_favorite = dk_odd2
-    #         dk_fav = True
-    #     # +1000,+500
-    #     if "+" in test_dk[i][2] and "+" in test_dk[i][5]:
-    #         dk_odd1 = test_dk[i][2].replace("+","")
-    #         dk_odd1 = float(dk_odd1)
-    #         dk_odd2 = test_dk[i][5].replace("+","")
-    #         dk_odd2 = float(dk_odd2)
-    #         if dk_odd1 > dk_odd2:
-    #             dk_underdog = dk_odd1
-    #             dk_favorite = dk_odd2
-    #         else:
-    #             dk_favorite = dk_odd1
-    #             dk_underdog = dk_odd2
-        
-    #     if dk_under:
-    #         positive_ev_under_dog = positive_ev_below(dk_underdog,no_vig_odds1,odds2)
-    #     else:
-    #         positive_ev_under_dog = positive_ev_above(dk_underdog,no_vig_odds1,odds2)
-    #     if dk_fav:
-    #         positive_ev_fav_bet = positive_ev_below(dk_favorite,odds2,no_vig_odds1)
-    #     else:
-    #         positive_ev_fav_bet = positive_ev_above(dk_favorite,odds2,no_vig_odds1)
-    #     # print("PEV_under",positive_ev_under_dog)
-    #     # print("dk_under",dk_underdog)
-    #     # print("PEV_fav",positive_ev_fav_bet)
-    #     # print("dk_fav",dk_favorite)
-    #     if(positive_ev_under_dog>0):
-
-    #         print("WE GOT ONE!!!!!!!!!!!!!!")
-    #         print(test_dk[i],test2[i])
-    #         print("pinnacle_american",pinnacle_underdog,pinnacle_favorite)
-        
-    #         print("Non-vig odds:",no_vig_odds1,odds2)
-    #         print("pinnacle",test2[i][1],test2[i][3])
-            
-    #         print("dk_odds",test_dk[i][2],test_dk[i][5])
-    #         print("PEV_under",positive_ev_under_dog)
-    #         print("dk_under",dk_underdog)
-    #         print("PEV_fav",positive_ev_fav_bet)
-    #         print("dk_fav",dk_favorite)
-    #     if(positive_ev_fav_bet>0):
-    #         print("WE GOT ONE!!!!!!!!!!!!!!")
-    #         print(test_dk[i],test2[i])
-    #         print("pinnacle_american",pinnacle_underdog,pinnacle_favorite)
-    #         print("Non-vig odds:",no_vig_odds1,odds2)
-    #         print("pinnacle",test2[i][1],test2[i][3])
-           
-    #         print("dk_odds",test_dk[i][2],test_dk[i][5])
-    #         print("PEV_under",positive_ev_under_dog)
-    #         print("dk_under",dk_underdog)
-    #         print("PEV_fav",positive_ev_fav_bet)
-    #         print("dk_fav",dk_favorite)
+   
 
 
-    #for i in 
-compare_odds('https://www.pinnacle.com/en/baseball/mlb/san-francisco-giants-vs-san-diego-padres/1555193550#player-props')
+#Atomate this manual labor
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/pittsburgh-pirates-vs-miami-marlins/1555283596#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/seattle-mariners-vs-washington-nationals/1555283589#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/cincinnati-reds-vs-new-york-yankees/1555283587#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/philadelphia-phillies-vs-toronto-blue-jays/1555283529#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/boston-red-sox-vs-tampa-bay-rays/1555283583#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/new-york-mets-vs-atlanta-braves/1555283523#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/milwaukee-brewers-vs-minnesota-twins/1555283604#player-props')
+# compare_odds('https://www.pinnacle.com/en/baseball/mlb/los-angeles-dodgers-vs-st-louis-cardinals/1555283590#player-props')
+compare_odds('https://www.pinnacle.com/en/baseball/mlb/oakland-athletics-vs-texas-rangers/1555326473#player-props')
+#compare_odds('https://www.pinnacle.com/en/baseball/mlb/baltimore-orioles-vs-chicago-cubs/1555326475#player-props')
+compare_odds('https://www.pinnacle.com/en/baseball/mlb/detroit-tigers-vs-kansas-city-royals/1555326462#player-props')
+compare_odds('https://www.pinnacle.com/en/baseball/mlb/san-diego-padres-vs-colorado-rockies/1555326453#player-props')
+compare_odds('https://www.pinnacle.com/en/baseball/mlb/houston-astros-vs-los-angeles-angels/1555326444#player-props')
+compare_odds('https://www.pinnacle.com/en/baseball/mlb/arizona-diamondbacks-vs-san-francisco-giants/1555326455#player-props')
